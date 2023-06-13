@@ -10,11 +10,11 @@ public class Evento {
 
     public Evento(String title, LocalDate date, int totalSeats) throws Exception {
         if (date.isBefore(LocalDate.now())) {
-            throw new Exception("La data è già passata");
+            throw new Exception("La data inserita è già passata");
         }
 
         if (totalSeats <= 0) {
-            throw new Exception("Il numero di posti non è valido");
+            throw new Exception("Il numero di posti inserito non è valido");
         }
 
         this.title = title;

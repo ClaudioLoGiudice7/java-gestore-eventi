@@ -101,7 +101,7 @@ public class Main {
             System.out.println("Posti prenotati: " + evento.getReservedSeats());
             System.out.println("Posti disponibili: " + (evento.getTotalSeats() - evento.getReservedSeats()));
         } catch (Exception e) {
-            System.out.println("Errore durante la creazione dell'evento: " + e.getMessage());
+            System.out.println("Mi dispiace, c'è stato un errore durante la creazione dell'evento: " + e.getMessage());
         }
 
         scanner.close();
