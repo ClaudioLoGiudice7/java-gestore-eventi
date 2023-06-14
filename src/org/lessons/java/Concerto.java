@@ -37,7 +37,7 @@ public class Concerto extends Evento {
     }
 
     public String getFormattedPrice() {
-        return price.setScale(2).toString() + "€";
+        return price.setScale(2).toString() + "euro";
     }
 
     @Override
